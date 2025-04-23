@@ -130,7 +130,6 @@
             convertTemp.BackColor = Color.Black;
             convertTemp.ForeColor = Color.White;
             convertTemp.FormattingEnabled = true;
-            convertTemp.Items.AddRange(new object[] { "Real", "Dolar", "Euro" });
             convertTemp.Location = new Point(618, 393);
             convertTemp.Name = "convertTemp";
             convertTemp.Size = new Size(78, 23);
@@ -141,7 +140,6 @@
             tempOptions.BackColor = Color.Black;
             tempOptions.ForeColor = Color.White;
             tempOptions.FormattingEnabled = true;
-            tempOptions.Items.AddRange(new object[] { "Real", "Dolar", "Euro" });
             tempOptions.Location = new Point(618, 284);
             tempOptions.Name = "tempOptions";
             tempOptions.Size = new Size(78, 23);
@@ -155,6 +153,7 @@
             userTemp.Name = "userTemp";
             userTemp.Size = new Size(87, 23);
             userTemp.TabIndex = 7;
+            userTemp.TextAlign = HorizontalAlignment.Center;
             // 
             // convertCurrencyButton
             // 
@@ -180,6 +179,7 @@
             convertTempButton.Text = "Convert";
             convertTempButton.TextAlign = ContentAlignment.TopCenter;
             convertTempButton.UseVisualStyleBackColor = false;
+            convertTempButton.Click += convertTempButton_Click;
             // 
             // ConverterForm
             // 
